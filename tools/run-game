@@ -74,6 +74,10 @@ else
   echo "✅ Καθαρίστηκε το προηγούμενο web build."
 fi
 
+# Το pygbag 0.9.3 περιμένει να υπάρχει ήδη ο φάκελος build/web
+# όταν τρέχει σε --build mode. Τον ξαναδημιουργούμε πάντα μετά το cleanup.
+mkdir -p build/web build/web-cache
+
 echo ""
 echo "== 3/4 Build με pygbag =="
 
