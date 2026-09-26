@@ -21,7 +21,7 @@ async def main():
     coin_y = random.randint(20, HEIGHT - 20)
 
     score = 0
-    font = pygame.font.Font("arial", 48)
+    font = pygame.font.Font(None, 48)
 
     running = True
     while running:
